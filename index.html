@@ -18,7 +18,7 @@
 <meta property="og:image" content="imagens/retrato-estudio.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap">
 <link rel="preload" as="image" href="imagens/retrato-estudio.jpg" fetchpriority="high">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Dra. Flávia Almeida","jobTitle":"Médica — Clínica Médica e Nutrologia","identifier":"CRM-MG 108002","sameAs":["https://www.instagram.com/dra.flaalmeida/","https://linktr.ee/flaviavalmeidaf"]}</script>
@@ -31,6 +31,7 @@ h1, h2, h3, h4, p, dl, dd, figure, ol, ul { margin: 0; }
 a { color: #41061C; text-decoration-thickness: 1px; text-underline-offset: 0.22em; }
 a:hover { color: #5A1230; }
 button { font: inherit; }
+a, button { touch-action: manipulation; -webkit-tap-highlight-color: rgba(65,6,28,0.12); }
 :focus-visible { outline: 2px solid #B4456F; outline-offset: 3px; }
 ::selection { background: #41061C; color: #F7F3EF; }
 @media (prefers-reduced-motion: reduce) {
@@ -70,7 +71,7 @@ button { font: inherit; }
   </div>
 </header>
 
-<div id="menu-movel" ref="{{ menuRef }}" role="dialog" aria-modal="true" aria-label="Menu" style="position:fixed; inset:0; z-index:60; background:#41061C; color:#F7F3EF; display:flex; flex-direction:column; padding:0 clamp(20px,5vw,64px) calc(28px + env(safe-area-inset-bottom, 0px)); overflow-y:auto; visibility:{{ menu.vis }}; opacity:{{ menu.op }}; transition:opacity .35s ease, visibility .35s;">
+<div id="menu-movel" ref="{{ menuRef }}" role="dialog" aria-modal="true" aria-label="Menu" style="position:fixed; inset:0; z-index:60; overscroll-behavior:contain; background:#41061C; color:#F7F3EF; display:flex; flex-direction:column; padding:0 clamp(20px,5vw,64px) calc(28px + env(safe-area-inset-bottom, 0px)); overflow-y:auto; visibility:{{ menu.vis }}; opacity:{{ menu.op }}; transition:opacity .35s ease, visibility .35s;">
   <div style="flex:none; height:72px; display:flex; align-items:center; justify-content:space-between; gap:16px; border-bottom:1px solid #5E1B35;">
     <span style="font-family:'Newsreader', Georgia, serif; font-size:23px; line-height:1; color:#F7F3EF; white-space:nowrap;"><span style="font-style:italic;">Dra.</span> Flávia Almeida</span>
     <button type="button" onClick="{{ closeMenu }}" style="display:flex; align-items:center; gap:10px; min-height:44px; padding:0 16px 0 18px; border:1px solid #B28E90; border-radius:999px; background:transparent; color:#F7F3EF; font-size:14px; font-weight:600; letter-spacing:0.04em; cursor:pointer;">Fechar <span aria-hidden="true" style="font-size:20px; line-height:1;">×</span></button>
@@ -288,7 +289,7 @@ button { font: inherit; }
 
 <section id="movimento" tabindex="-1" aria-labelledby="movimento-titulo" data-screen-label="Vida em movimento" style="scroll-margin-top:72px; outline:none;">
   <figure style="margin:0; position:relative; height:clamp(380px,54vw,820px); overflow:hidden; background:#D9D7D2;">
-    <img src="imagens/atividade-ar-livre.jpg" alt="Dra. Flávia Almeida corre sorrindo ao ar livre, em meio à vegetação, em um dia nublado." loading="lazy" decoding="async" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:62% 30%;">
+    <img src="imagens/atividade-ar-livre.jpg" width="2000" height="1333" alt="Dra. Flávia Almeida corre sorrindo ao ar livre, em meio à vegetação, em um dia nublado." loading="lazy" decoding="async" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:62% 30%;">
     <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><span style="position:absolute; top:16px; left:clamp(20px,5vw,64px); display:inline-flex; align-items:center; gap:7px; padding:5px 10px 5px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A;"></span>Autorização pendente · camiseta com marcas de terceiros</span></sc-if>
   </figure>
   <div style="max-width:1360px; margin:0 auto; padding:0 clamp(20px,5vw,64px) clamp(72px,9vw,130px);">
@@ -498,7 +499,7 @@ button { font: inherit; }
 </sc-if>
 
 <div onClick="{{ onBackdrop }}" style="position:fixed; inset:0; z-index:70; display:grid; place-items:center; padding:20px; background:rgba(41,37,38,0.6); visibility:{{ priv.vis }}; opacity:{{ priv.op }}; transition:opacity .3s ease, visibility .3s;">
-  <div ref="{{ privacyRef }}" role="dialog" aria-modal="true" aria-labelledby="privacidade-titulo" style="width:100%; max-width:580px; max-height:calc(100vh - 40px); overflow:auto; padding:clamp(26px,4vw,44px); border-radius:6px; background:#F7F3EF; color:#292526; display:flex; flex-direction:column; gap:18px;">
+  <div ref="{{ privacyRef }}" role="dialog" aria-modal="true" aria-labelledby="privacidade-titulo" style="width:100%; max-width:580px; max-height:calc(100vh - 40px); overflow:auto; overscroll-behavior:contain; padding:clamp(26px,4vw,44px); border-radius:6px; background:#F7F3EF; color:#292526; display:flex; flex-direction:column; gap:18px;">
     <h2 id="privacidade-titulo" style="font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(30px,3vw,40px); line-height:1.1; color:#41061C;">Política de privacidade</h2>
     <p style="font-size:16px; line-height:1.65; text-wrap:pretty;">Este é um site institucional e informativo. Ele não possui formulários e não solicita dados pessoais ou de saúde.</p>
     <p style="font-size:16px; line-height:1.65; text-wrap:pretty;">Os botões de agendamento e os links para o Instagram levam a serviços externos, que seguem as próprias políticas de privacidade.</p>
