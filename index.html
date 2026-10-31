@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Dra. Flávia Almeida — Clínica Médica e Nutrologia · CRM-MG 108002</title>
+<meta name="description" content="Dra. Flávia Almeida, médica de Clínica Médica e Nutrologia (CRM-MG 108002). Cuidado médico individualizado para construir hábitos e decisões de saúde com mais clareza.">
+<meta name="theme-color" content="#F7F3EF">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Dra. Flávia Almeida — Clínica Médica e Nutrologia">
+<meta property="og:description" content="Saúde não é sacrifício, é estratégia. Cuidado médico individualizado, com escuta, ciência e hábitos possíveis.">
+<meta property="og:image" content="imagens/retrato-estudio.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap">
+<link rel="preload" as="image" href="imagens/retrato-estudio.jpg" fetchpriority="high">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Dra. Flávia Almeida","jobTitle":"Médica — Clínica Médica e Nutrologia","identifier":"CRM-MG 108002","sameAs":["https://www.instagram.com/dra.flaalmeida/","https://linktr.ee/flaviavalmeidaf"]}</script>
+<style>
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: #F7F3EF; color: #292526; font-family: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+img { display: block; max-width: 100%; }
+h1, h2, h3, h4, p, dl, dd, figure, ol, ul { margin: 0; }
+a { color: #41061C; text-decoration-thickness: 1px; text-underline-offset: 0.22em; }
+a:hover { color: #5A1230; }
+button { font: inherit; }
+:focus-visible { outline: 2px solid #B4456F; outline-offset: 3px; }
+::selection { background: #41061C; color: #F7F3EF; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+</style>
+</helmet>
+<div style="background:#F7F3EF; color:#292526; font-family:'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif; overflow-x:clip;">
+
+<a href="#conteudo" onClick="{{ navTo }}" style="position:absolute; left:16px; top:-120px; z-index:100; display:inline-flex; align-items:center; min-height:44px; padding:0 20px; border-radius:999px; background:#41061C; color:#F7F3EF; font-size:15px; font-weight:600; text-decoration:none;" style-focus="top:12px;">Pular para o conteúdo</a>
+
+<header data-screen-label="Cabeçalho" style="position:sticky; top:0; z-index:40; background:rgba(247,243,239,0.94); backdrop-filter:blur(12px); border-bottom:1px solid #E4D8CF;">
+  <div style="max-width:1360px; margin:0 auto; padding:0 clamp(20px,5vw,64px); height:72px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+    <a href="#inicio" onClick="{{ navTo }}" aria-label="Dra. Flávia Almeida — início" style="display:flex; flex-direction:column; gap:6px; text-decoration:none; color:#41061C;">
+      <span style="font-family:'Newsreader', Georgia, serif; font-size:23px; line-height:1; font-weight:400; letter-spacing:-0.01em; white-space:nowrap;"><span style="font-style:italic;">Dra.</span> Flávia Almeida</span>
+      <span style="font-size:11px; line-height:1; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#5E5557; white-space:nowrap;">Clínica Médica · Nutrologia</span>
+    </a>
+    <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+      <nav aria-label="Navegação principal" style="display:flex; align-items:center; gap:clamp(20px,2.4vw,36px);">
+        <ul style="display:flex; align-items:center; gap:clamp(18px,2.1vw,32px); list-style:none; padding:0;">
+          <li><a href="#inicio" onClick="{{ navTo }}" style="display:block; padding:12px 0; color:#292526; text-decoration:none; font-size:15px; font-weight:500;" style-hover="color:#41061C; text-decoration:underline;">Início</a></li>
+          <li><a href="#sobre" onClick="{{ navTo }}" style="display:block; padding:12px 0; color:#292526; text-decoration:none; font-size:15px; font-weight:500;" style-hover="color:#41061C; text-decoration:underline;">Sobre</a></li>
+          <li><a href="#atendimento" onClick="{{ navTo }}" style="display:block; padding:12px 0; color:#292526; text-decoration:none; font-size:15px; font-weight:500;" style-hover="color:#41061C; text-decoration:underline;">Atendimento</a></li>
+          <li><a href="#conteudos" onClick="{{ navTo }}" style="display:block; padding:12px 0; color:#292526; text-decoration:none; font-size:15px; font-weight:500;" style-hover="color:#41061C; text-decoration:underline;">Conteúdos</a></li>
+          <li><a href="#contato" onClick="{{ navTo }}" style="display:block; padding:12px 0; color:#292526; text-decoration:none; font-size:15px; font-weight:500;" style-hover="color:#41061C; text-decoration:underline;">Contato</a></li>
+        </ul>
+        <a href="{{ agendamento }}" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:10px; min-height:46px; padding:0 22px; border-radius:999px; background:#41061C; color:#F7F3EF; text-decoration:none; font-size:14.5px; font-weight:600; letter-spacing:0.01em; white-space:nowrap; transition:background-color .25s ease;" style-hover="background:#5A1230; color:#F7F3EF;">Agendar consulta <span aria-hidden="true">↗</span><span style="position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;">(abre em nova aba)</span></a>
+      </nav>
+    </sc-if>
+    <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
+      <button type="button" ref="{{ menuBtnRef }}" onClick="{{ openMenu }}" aria-expanded="{{ menuOpen }}" aria-controls="menu-movel" style="display:flex; align-items:center; gap:10px; min-height:44px; padding:0 18px 0 16px; border:1px solid #41061C; border-radius:999px; background:transparent; color:#41061C; font-size:14px; font-weight:600; letter-spacing:0.04em; cursor:pointer;">
+        <span aria-hidden="true" style="display:flex; flex-direction:column; gap:5px;"><span style="display:block; width:16px; height:1.5px; background:#41061C;"></span><span style="display:block; width:16px; height:1.5px; background:#41061C;"></span></span>
+        Menu
+      </button>
+    </sc-if>
+  </div>
+</header>
+
+<div id="menu-movel" ref="{{ menuRef }}" role="dialog" aria-modal="true" aria-label="Menu" style="position:fixed; inset:0; z-index:60; background:#41061C; color:#F7F3EF; display:flex; flex-direction:column; padding:0 clamp(20px,5vw,64px) calc(28px + env(safe-area-inset-bottom, 0px)); overflow-y:auto; visibility:{{ menu.vis }}; opacity:{{ menu.op }}; transition:opacity .35s ease, visibility .35s;">
+  <div style="flex:none; height:72px; display:flex; align-items:center; justify-content:space-between; gap:16px; border-bottom:1px solid #5E1B35;">
+    <span style="font-family:'Newsreader', Georgia, serif; font-size:23px; line-height:1; color:#F7F3EF; white-space:nowrap;"><span style="font-style:italic;">Dra.</span> Flávia Almeida</span>
+    <button type="button" onClick="{{ closeMenu }}" style="display:flex; align-items:center; gap:10px; min-height:44px; padding:0 16px 0 18px; border:1px solid #B28E90; border-radius:999px; background:transparent; color:#F7F3EF; font-size:14px; font-weight:600; letter-spacing:0.04em; cursor:pointer;">Fechar <span aria-hidden="true" style="font-size:20px; line-height:1;">×</span></button>
+  </div>
+  <nav aria-label="Navegação principal" style="flex:1; display:flex; flex-direction:column; justify-content:center; padding:32px 0;">
+    <ul style="list-style:none; padding:0;">
+      <li style="border-bottom:1px solid #5E1B35;"><a href="#inicio" ref="{{ firstMenuLinkRef }}" onClick="{{ navTo }}" style="display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 0; font-family:'Newsreader', Georgia, serif; font-size:clamp(34px,9vw,52px); font-weight:300; line-height:1.05; letter-spacing:-0.02em; color:#F7F3EF; text-decoration:none;">Início<span aria-hidden="true" style="font-family:'Hanken Grotesk', sans-serif; font-size:18px; color:#B28E90;">→</span></a></li>
+      <li style="border-bottom:1px solid #5E1B35;"><a href="#sobre" onClick="{{ navTo }}" style="display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 0; font-family:'Newsreader', Georgia, serif; font-size:clamp(34px,9vw,52px); font-weight:300; line-height:1.05; letter-spacing:-0.02em; color:#F7F3EF; text-decoration:none;">Sobre<span aria-hidden="true" style="font-family:'Hanken Grotesk', sans-serif; font-size:18px; color:#B28E90;">→</span></a></li>
+      <li style="border-bottom:1px solid #5E1B35;"><a href="#atendimento" onClick="{{ navTo }}" style="display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 0; font-family:'Newsreader', Georgia, serif; font-size:clamp(34px,9vw,52px); font-weight:300; line-height:1.05; letter-spacing:-0.02em; color:#F7F3EF; text-decoration:none;">Atendimento<span aria-hidden="true" style="font-family:'Hanken Grotesk', sans-serif; font-size:18px; color:#B28E90;">→</span></a></li>
+      <li style="border-bottom:1px solid #5E1B35;"><a href="#conteudos" onClick="{{ navTo }}" style="display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 0; font-family:'Newsreader', Georgia, serif; font-size:clamp(34px,9vw,52px); font-weight:300; line-height:1.05; letter-spacing:-0.02em; color:#F7F3EF; text-decoration:none;">Conteúdos<span aria-hidden="true" style="font-family:'Hanken Grotesk', sans-serif; font-size:18px; color:#B28E90;">→</span></a></li>
+      <li style="border-bottom:1px solid #5E1B35;"><a href="#contato" onClick="{{ navTo }}" style="display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 0; font-family:'Newsreader', Georgia, serif; font-size:clamp(34px,9vw,52px); font-weight:300; line-height:1.05; letter-spacing:-0.02em; color:#F7F3EF; text-decoration:none;">Contato<span aria-hidden="true" style="font-family:'Hanken Grotesk', sans-serif; font-size:18px; color:#B28E90;">→</span></a></li>
+    </ul>
+  </nav>
+  <div style="flex:none; display:flex; flex-direction:column; gap:18px;">
+    <a href="{{ agendamento }}" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px; border-radius:999px; background:#F7F3EF; color:#41061C; text-decoration:none; font-size:16px; font-weight:600;" style-hover="background:#E9DED6; color:#41061C;">Agendar consulta <span aria-hidden="true">↗</span><span style="position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;">(abre em nova aba)</span></a>
+    <a href="https://www.instagram.com/dra.flaalmeida/" target="_blank" rel="noopener noreferrer" style="align-self:center; display:inline-flex; align-items:center; min-height:44px; color:#E9DED6; font-size:15px; text-decoration:underline;" style-hover="color:#F7F3EF;">Instagram @dra.flaalmeida<span style="position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;">(abre em nova aba)</span></a>
+  </div>
+</div>
+
+<main id="conteudo" tabindex="-1" style="outline:none;">
+
+<section id="inicio" tabindex="-1" aria-labelledby="hero-titulo" data-screen-label="Hero" style="scroll-margin-top:72px; outline:none;">
+  <div style="max-width:1360px; margin:0 auto; padding:clamp(28px,5vw,72px) clamp(20px,5vw,64px) clamp(64px,8vw,120px);">
+    <div style="display:flex; flex-direction:column; gap:10px;">
+      <p style="font-family:'Newsreader', Georgia, serif; font-style:italic; font-size:clamp(21px,1.8vw,25px); line-height:1.2; color:#41061C;">Dra. Flávia Almeida</p>
+      <p style="display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; font-size:12px; line-height:1.3; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#41061C;">
+        <span>Clínica Médica e Nutrologia</span>
+        <span aria-hidden="true" style="width:4px; height:4px; border-radius:50%; background:#B28E90;"></span>
+        <span>CRM-MG 108002</span>
+        <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex; align-items:center; gap:7px; padding:5px 10px 5px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em; text-transform:none;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A;"></span>RQE: aguardando confirmação</span></sc-if>
+      </p>
+    </div>
+    <h1 id="hero-titulo" style="margin-top:clamp(22px,3vw,40px); font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(42px,6.1vw,96px); line-height:1.02; letter-spacing:-0.025em; color:#41061C; text-wrap:balance;">Sua saúde merece uma <em style="font-style:italic;">estratégia</em> que faça sentido para você.</h1>
+    <div style="display:flex; flex-wrap:wrap; align-items:stretch; gap:clamp(36px,5vw,80px); margin-top:clamp(32px,4.5vw,64px);">
+      <div style="flex:1 1 360px; display:flex; flex-direction:column; justify-content:space-between; gap:40px;">
+        <div style="display:flex; flex-direction:column; gap:32px;">
+          <p style="font-size:clamp(18px,1.45vw,22px); line-height:1.55; color:#292526; max-width:30ch; text-wrap:pretty;">Cuidado médico individualizado para construir hábitos e decisões de saúde com mais clareza.</p>
+          <div style="display:flex; flex-wrap:wrap; align-items:center; gap:14px 26px;">
+            <a href="{{ agendamento }}" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; justify-content:center; gap:12px; min-height:56px; padding:0 30px; border-radius:999px; background:#41061C; color:#F7F3EF; text-decoration:none; font-size:16px; font-weight:600; letter-spacing:0.01em; transition:background-color .25s ease;" style-hover="background:#5A1230; color:#F7F3EF;">Agendar consulta <span aria-hidden="true">↗</span><span style="position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;">(abre em nova aba)</span></a>
+            <a href="#abordagem" onClick="{{ navTo }}" style="display:inline-flex; align-items:center; gap:14px; min-height:52px; color:#41061C; text-decoration:none; font-size:16px; font-weight:600;" style-hover="color:#5A1230;"><span aria-hidden="true" style="width:46px; height:46px; border-radius:50%; border:1px solid #41061C; display:grid; place-items:center; font-size:17px; line-height:1;">↓</span><span style="text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:5px;">Conheça minha abordagem</span></a>
+          </div>
+        </div>
+        <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px 24px; padding-top:18px; border-top:1px solid #DDD0C7; font-size:14.5px;">
+          <a href="#atendimento" onClick="{{ navTo }}" style="display:inline-flex; align-items:center; min-height:44px; color:#41061C;">Como funciona a consulta</a>
+          <a href="https://www.instagram.com/dra.flaalmeida/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:6px; min-height:44px; color:#41061C;">@dra.flaalmeida <span aria-hidden="true">↗</span><span style="position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;">no Instagram (abre em nova aba)</span></a>
+        </div>
+        </sc-if>
+      </div>
+      <figure style="flex:1.6 1 440px; position:relative; margin:0; height:clamp(420px,42vw,620px); overflow:hidden; border-radius:3px; background:#2E2A2C;">
+        <img src="imagens/retrato-estudio.jpg" width="1080" height="870" fetchpriority="high" alt="Retrato da Dra. Flávia Almeida, de blazer claro, com a mão apoiada no queixo e olhando para a câmera." style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:74% 30%;">
+        <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><span style="position:absolute; top:14px; left:14px; display:inline-flex; align-items:center; gap:7px; padding:5px 10px 5px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A;"></span>Foto: autorização de uso e original em alta pendentes</span></sc-if>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="abordagem" tabindex="-1" aria-labelledby="abordagem-titulo" data-screen-label="Abordagem" style="scroll-margin-top:72px; outline:none; position:relative; overflow:hidden; background:#41061C; color:#F7F3EF;">
+  <div aria-hidden="true" style="position:absolute; right:-24vw; top:-30vw; width:clamp(560px,80vw,1240px); aspect-ratio:1; border-radius:50%; border:1px solid #6B2A42; pointer-events:none;"></div>
+  <div aria-hidden="true" style="position:absolute; right:-10vw; top:-14vw; width:clamp(380px,52vw,820px); aspect-ratio:1; border-radius:50%; border:1px solid #5A1A33; pointer-events:none;"></div>
+  <div style="position:relative; max-width:1360px; margin:0 auto; padding:clamp(80px,11vw,170px) clamp(20px,5vw,64px);">
+    <p style="display:flex; align-items:center; gap:10px; font-size:12px; line-height:1; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#B28E90;"><span aria-hidden="true" style="width:8px; height:8px; border-radius:50%; border:1px solid currentColor; flex:none;"></span>Abordagem</p>
+    <h2 id="abordagem-titulo" style="margin-top:clamp(24px,3vw,40px); font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(44px,8.2vw,128px); line-height:0.98; letter-spacing:-0.03em; color:#F7F3EF;">Saúde não é sacrifício,<br><em style="font-style:italic; color:#B28E90;">é estratégia.</em></h2>
+    <div style="display:flex; flex-wrap:wrap; align-items:flex-start; gap:32px clamp(40px,7vw,120px); margin-top:clamp(40px,6vw,80px);">
+      <div style="flex:1 1 260px; display:flex; flex-direction:column; gap:14px;">
+        <p style="font-family:'Newsreader', Georgia, serif; font-style:italic; font-weight:300; font-size:clamp(25px,2.3vw,34px); line-height:1.2; color:#F7F3EF;">Eu te guio no caminho.</p>
+        <p style="font-size:12px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#B28E90;">Dra. Flávia Almeida</p>
+      </div>
+      <p style="flex:2 1 380px; max-width:56ch; font-size:clamp(17px,1.3vw,20px); line-height:1.68; color:#E9DED6; text-wrap:pretty;">Cada pessoa chega com uma história, uma rotina e objetivos próprios. Meu papel é escutar com atenção, interpretar o que a ciência mostra e transformar isso em decisões possíveis — que caibam na sua vida, e não o contrário.</p>
+    </div>
+    <ul style="list-style:none; padding:0; margin-top:clamp(64px,8vw,120px); display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr)); gap:44px clamp(24px,3vw,48px);">
+      <li style="border-top:1px solid #7A4057; padding-top:24px;">
+        <h3 style="font-family:'Newsreader', Georgia, serif; font-weight:400; font-size:clamp(25px,2vw,30px); line-height:1.15; color:#F7F3EF;">Escuta</h3>
+        <p style="margin-top:12px; font-size:16px; line-height:1.62; color:#E9DED6; text-wrap:pretty;">Antes de qualquer orientação, entender sua história, sua rotina e o que é importante para você.</p>
+      </li>
+      <li style="border-top:1px solid #7A4057; padding-top:24px;">
+        <h3 style="font-family:'Newsreader', Georgia, serif; font-weight:400; font-size:clamp(25px,2vw,30px); line-height:1.15; color:#F7F3EF;">Individualidade</h3>
+        <p style="margin-top:12px; font-size:16px; line-height:1.62; color:#E9DED6; text-wrap:pretty;">Não existe plano pronto. Cada decisão parte do seu contexto, do seu momento e das suas preferências.</p>
+      </li>
+      <li style="border-top:1px solid #7A4057; padding-top:24px;">
+        <h3 style="font-family:'Newsreader', Georgia, serif; font-weight:400; font-size:clamp(25px,2vw,30px); line-height:1.15; color:#F7F3EF;">Ciência</h3>
+        <p style="margin-top:12px; font-size:16px; line-height:1.62; color:#E9DED6; text-wrap:pretty;">Condutas baseadas em evidências e explicadas com clareza, para que você entenda o porquê de cada passo.</p>
+      </li>
+      <li style="border-top:1px solid #7A4057; padding-top:24px;">
+        <h3 style="font-family:'Newsreader', Georgia, serif; font-weight:400; font-size:clamp(25px,2vw,30px); line-height:1.15; color:#F7F3EF;">Hábitos possíveis</h3>
+        <p style="margin-top:12px; font-size:16px; line-height:1.62; color:#E9DED6; text-wrap:pretty;">Mudanças construídas aos poucos, no seu ritmo e pensadas para durar — sem extremos.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="sobre" tabindex="-1" aria-labelledby="sobre-titulo" data-screen-label="Sobre" style="scroll-margin-top:72px; outline:none;">
+  <div style="max-width:1360px; margin:0 auto; padding:clamp(80px,10vw,150px) clamp(20px,5vw,64px); display:flex; flex-wrap:wrap; align-items:flex-start; gap:clamp(44px,7vw,120px);">
+    <figure style="flex:1 1 300px; max-width:540px; margin:0;">
+      <div style="position:relative; aspect-ratio:4/5; overflow:hidden; border-radius:3px; background:#C9A78A;">
+        <img src="imagens/consultorio-inbody.jpg" width="1200" height="1579" alt="Dra. Flávia Almeida, de jaleco, sorri no consultório ao lado do aparelho de avaliação da composição corporal." loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; object-position:50% 45%;">
+        <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><span style="position:absolute; top:14px; left:14px; right:14px; display:inline-flex; align-items:center; gap:7px; width:fit-content; padding:5px 10px 5px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A; flex:none;"></span>Autorização de uso pendente · jaleco com logos de terceiros</span></sc-if>
+      </div>
+      <figcaption style="margin-top:14px; font-size:13px; letter-spacing:0.04em; color:#5E5557;">No consultório</figcaption>
+    </figure>
+    <div style="flex:1.35 1 400px; max-width:700px; display:flex; flex-direction:column; gap:28px;">
+      <p style="display:flex; align-items:center; gap:10px; font-size:12px; line-height:1; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#41061C;"><span aria-hidden="true" style="width:8px; height:8px; border-radius:50%; border:1px solid currentColor; flex:none;"></span>Sobre</p>
+      <h2 id="sobre-titulo" style="font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(38px,5vw,76px); line-height:1.03; letter-spacing:-0.022em; color:#41061C; text-wrap:balance;">Prazer, eu sou a <em style="font-style:italic;">Flávia</em>.</h2>
+      <div style="display:flex; flex-direction:column; gap:18px; max-width:60ch; font-size:clamp(17px,1.2vw,19px); line-height:1.7; color:#292526;">
+        <p style="text-wrap:pretty;">Sou médica e atuo em Clínica Médica e Nutrologia. Minha formação em Nutrologia foi na USP, no Hospital das Clínicas de Ribeirão Preto. <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex; align-items:center; gap:7px; padding:4px 10px 4px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em; vertical-align:middle;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A;"></span>Títulos e redação exata a confirmar</span></sc-if></p>
+        <p style="text-wrap:pretty;">No consultório, acredito que cuidar da saúde não precisa ser uma lista de proibições. Gosto de explicar o porquê de cada decisão, para que você saia da consulta entendendo melhor o próprio corpo — e com um caminho claro pela frente.</p>
+        <p style="text-wrap:pretty;">Fora dele, a corrida e a natureza fazem parte da minha rotina e me lembram que saúde também é movimento, autonomia e vida real.</p>
+      </div>
+      <dl style="margin-top:8px; border-top:1px solid #DDD0C7;">
+        <div style="display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 24px; padding:18px 0; border-bottom:1px solid #DDD0C7;">
+          <dt style="flex:0 0 190px; font-size:12px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#5E5557;">Atuação</dt>
+          <dd style="flex:1 1 240px; font-family:'Newsreader', Georgia, serif; font-size:21px; line-height:1.35; color:#41061C;">Clínica Médica e Nutrologia</dd>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 24px; padding:18px 0; border-bottom:1px solid #DDD0C7;">
+          <dt style="flex:0 0 190px; font-size:12px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#5E5557;">Formação em Nutrologia</dt>
+          <dd style="flex:1 1 240px; font-family:'Newsreader', Georgia, serif; font-size:21px; line-height:1.35; color:#41061C;">USP — Hospital das Clínicas de Ribeirão Preto</dd>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 24px; padding:18px 0; border-bottom:1px solid #DDD0C7;">
+          <dt style="flex:0 0 190px; font-size:12px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#5E5557;">Registro</dt>
+          <dd style="flex:1 1 240px; display:flex; flex-wrap:wrap; align-items:center; gap:10px; font-family:'Newsreader', Georgia, serif; font-size:21px; line-height:1.35; color:#41061C;">CRM-MG 108002<sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex; align-items:center; gap:7px; padding:4px 10px 4px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-family:'Hanken Grotesk', sans-serif; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A;"></span>RQE: números divergentes nas publicações</span></sc-if></dd>
+        </div>
+        <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 24px; padding:18px 0; border-bottom:1px dashed #9C7A1A; background:#FBF3DC;">
+            <dt style="flex:0 0 190px; font-size:12px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#4A3600;">Graduação</dt>
+            <dd style="flex:1 1 240px; font-size:15px; line-height:1.5; color:#4A3600;">Instituição e titulações complementares a confirmar com a médica</dd>
+          </div>
+        </sc-if>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="atendimento" tabindex="-1" aria-labelledby="atendimento-titulo" data-screen-label="Atendimento" style="scroll-margin-top:72px; outline:none; background:#E9DED6;">
+  <div style="max-width:1360px; margin:0 auto; padding:clamp(80px,10vw,150px) clamp(20px,5vw,64px) clamp(64px,8vw,110px);">
+    <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:28px clamp(40px,6vw,96px);">
+      <div style="flex:1 1 440px; display:flex; flex-direction:column; gap:28px;">
+        <p style="display:flex; align-items:center; gap:10px; font-size:12px; line-height:1; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#41061C;"><span aria-hidden="true" style="width:8px; height:8px; border-radius:50%; border:1px solid currentColor; flex:none;"></span>Atendimento</p>
+        <h2 id="atendimento-titulo" style="font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(38px,5vw,76px); line-height:1.03; letter-spacing:-0.022em; color:#41061C; text-wrap:balance;">Um cuidado que olha para <em style="font-style:italic;">o todo</em>.</h2>
+      </div>
+      <p style="flex:1 1 320px; max-width:46ch; font-size:clamp(17px,1.2vw,19px); line-height:1.68; color:#292526; text-wrap:pretty;">Duas áreas da medicina que se complementam: a visão ampla da Clínica Médica e o olhar da Nutrologia sobre a relação entre alimentação, nutrição e saúde.</p>
+    </div>
+    <div style="margin-top:clamp(56px,7vw,96px); display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr)); gap:48px clamp(32px,5vw,80px);">
+      <article style="border-top:1px solid #41061C; padding-top:28px; display:flex; flex-direction:column; gap:18px;">
+        <h3 style="font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(34px,3.4vw,52px); line-height:1.05; letter-spacing:-0.02em; color:#41061C;">Clínica Médica</h3>
+        <p style="max-width:52ch; font-size:clamp(17px,1.2vw,19px); line-height:1.68; color:#292526; text-wrap:pretty;">Cuida do adulto de forma integral. Em vez de olhar para um sintoma isolado, considera história, hábitos e condições de saúde em conjunto — da prevenção ao acompanhamento ao longo do tempo.</p>
+      </article>
+      <article style="border-top:1px solid #41061C; padding-top:28px; display:flex; flex-direction:column; gap:18px;">
+        <h3 style="font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(34px,3.4vw,52px); line-height:1.05; letter-spacing:-0.02em; color:#41061C;">Nutrologia</h3>
+        <p style="max-width:52ch; font-size:clamp(17px,1.2vw,19px); line-height:1.68; color:#292526; text-wrap:pretty;">Especialidade médica dedicada à relação entre nutrição e saúde. Avalia o estado nutricional e cuida de condições ligadas a ele — como deficiências de nutrientes, alterações metabólicas e obesidade — com base em evidências e na sua realidade.</p>
+      </article>
+    </div>
+    <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><p style="margin-top:20px;"><span style="display:inline-flex; align-items:center; gap:7px; padding:5px 10px 5px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A;"></span>Divulgação de especialidade exige RQE confirmado (normas do CFM)</span></p></sc-if>
+    <div style="margin-top:clamp(56px,7vw,96px); display:flex; flex-wrap:wrap; align-items:baseline; gap:16px clamp(32px,5vw,80px); padding:clamp(26px,3vw,40px) 0; border-top:1px solid #C9B6AB; border-bottom:1px solid #C9B6AB;">
+      <h3 style="flex:1 1 280px; font-family:'Newsreader', Georgia, serif; font-style:italic; font-weight:300; font-size:clamp(28px,2.6vw,38px); line-height:1.1; color:#41061C;">Nutrologia ou nutrição?</h3>
+      <p style="flex:2 1 380px; max-width:64ch; font-size:clamp(16px,1.1vw,18px); line-height:1.68; color:#292526; text-wrap:pretty;">A nutróloga é médica: investiga, diagnostica e trata condições de saúde relacionadas à nutrição. O nutricionista é o profissional responsável pela orientação e pelo planejamento alimentar. São atuações diferentes, que podem se complementar.</p>
+    </div>
+    <div style="margin-top:clamp(56px,7vw,96px);">
+      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:12px 16px;">
+        <h3 style="display:flex; align-items:center; gap:10px; font-size:12px; line-height:1; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#41061C;"><span aria-hidden="true" style="width:8px; height:8px; border-radius:50%; border:1px solid currentColor; flex:none;"></span>Temas frequentes nos conteúdos</h3>
+        <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex; align-items:center; gap:7px; padding:5px 10px 5px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A;"></span>Confirmar quais temas são áreas de atendimento</span></sc-if>
+      </div>
+      <ul style="list-style:none; padding:0; margin-top:28px; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr)); gap:32px clamp(24px,3vw,44px);">
+        <li style="border-top:1px solid #C9B6AB; padding-top:20px; display:flex; flex-direction:column; gap:10px;">
+          <h4 style="font-family:'Newsreader', Georgia, serif; font-weight:400; font-size:clamp(22px,1.7vw,25px); line-height:1.2; color:#41061C;">Alimentação em contexto</h4>
+          <p style="font-size:15.5px; line-height:1.6; color:#4F4749; text-wrap:pretty;">Comer bem considerando rotina, cultura, preferências e objetivos.</p>
+        </li>
+        <li style="border-top:1px solid #C9B6AB; padding-top:20px; display:flex; flex-direction:column; gap:10px;">
+          <h4 style="font-family:'Newsreader', Georgia, serif; font-weight:400; font-size:clamp(22px,1.7vw,25px); line-height:1.2; color:#41061C;">Atividade física</h4>
+          <p style="font-size:15.5px; line-height:1.6; color:#4F4749; text-wrap:pretty;">Movimento como parte da saúde, ajustado ao seu momento.</p>
+        </li>
+        <li style="border-top:1px solid #C9B6AB; padding-top:20px; display:flex; flex-direction:column; gap:10px;">
+          <h4 style="font-family:'Newsreader', Georgia, serif; font-weight:400; font-size:clamp(22px,1.7vw,25px); line-height:1.2; color:#41061C;">Composição corporal</h4>
+          <p style="font-size:15.5px; line-height:1.6; color:#4F4749; text-wrap:pretty;">Entender o corpo para além do número na balança.</p>
+        </li>
+        <li style="border-top:1px solid #C9B6AB; padding-top:20px; display:flex; flex-direction:column; gap:10px;">
+          <h4 style="font-family:'Newsreader', Georgia, serif; font-weight:400; font-size:clamp(22px,1.7vw,25px); line-height:1.2; color:#41061C;">Obesidade</h4>
+          <p style="font-size:15.5px; line-height:1.6; color:#4F4749; text-wrap:pretty;">Uma condição crônica que merece cuidado médico, sem julgamento.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="como-funciona" tabindex="-1" aria-labelledby="como-titulo" data-screen-label="Como funciona" style="scroll-margin-top:72px; outline:none; background:#E9DED6;">
+  <div style="max-width:1360px; margin:0 auto; padding:0 clamp(20px,5vw,64px) clamp(88px,11vw,160px);">
+    <div style="padding-top:clamp(64px,8vw,110px); border-top:1px solid #C9B6AB; display:flex; flex-direction:column; gap:28px;">
+      <p style="display:flex; align-items:center; gap:10px; font-size:12px; line-height:1; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#41061C;"><span aria-hidden="true" style="width:8px; height:8px; border-radius:50%; border:1px solid currentColor; flex:none;"></span>Como funciona</p>
+      <h2 id="como-titulo" style="max-width:18ch; font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(38px,5vw,76px); line-height:1.03; letter-spacing:-0.022em; color:#41061C; text-wrap:balance;">Do primeiro contato ao <em style="font-style:italic;">acompanhamento</em>.</h2>
+      <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><p><span style="display:inline-flex; align-items:center; gap:7px; padding:5px 10px 5px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A;"></span>Etapas a validar com a médica · sem duração, frequência, exames ou valores</span></p></sc-if>
+    </div>
+    <ol style="list-style:none; padding:0; margin-top:clamp(64px,7vw,96px); display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr)); gap:60px 0;">
+      <li style="position:relative; border-top:1px solid #B9A398; padding:46px 32px 0 0;">
+        <span aria-hidden="true" style="position:absolute; top:-23px; left:0; width:46px; height:46px; border-radius:50%; border:1px solid #41061C; background:#E9DED6; display:grid; place-items:center; font-family:'Newsreader', Georgia, serif; font-size:19px; line-height:1; color:#41061C;">1</span>
+        <h3 style="font-family:'Newsreader', Georgia, serif; font-weight:400; font-size:clamp(24px,2vw,29px); line-height:1.15; color:#41061C;">Primeiro contato</h3>
+        <p style="margin-top:12px; max-width:34ch; font-size:16px; line-height:1.65; color:#292526; text-wrap:pretty;">Pelo canal oficial de agendamento, você recebe as informações necessárias para marcar sua consulta.</p>
+      </li>
+      <li style="position:relative; border-top:1px solid #B9A398; padding:46px 32px 0 0;">
+        <span aria-hidden="true" style="position:absolute; top:-23px; left:0; width:46px; height:46px; border-radius:50%; border:1px solid #41061C; background:#E9DED6; display:grid; place-items:center; font-family:'Newsreader', Georgia, serif; font-size:19px; line-height:1; color:#41061C;">2</span>
+        <h3 style="font-family:'Newsreader', Georgia, serif; font-weight:400; font-size:clamp(24px,2vw,29px); line-height:1.15; color:#41061C;">Consulta e escuta</h3>
+        <p style="margin-top:12px; max-width:34ch; font-size:16px; line-height:1.65; color:#292526; text-wrap:pretty;">Um momento para conhecer sua história, sua rotina e seus objetivos, com espaço para as suas dúvidas.</p>
+      </li>
+      <li style="position:relative; border-top:1px solid #B9A398; padding:46px 32px 0 0;">
+        <span aria-hidden="true" style="position:absolute; top:-23px; left:0; width:46px; height:46px; border-radius:50%; border:1px solid #41061C; background:#E9DED6; display:grid; place-items:center; font-family:'Newsreader', Georgia, serif; font-size:19px; line-height:1; color:#41061C;">3</span>
+        <h3 style="font-family:'Newsreader', Georgia, serif; font-weight:400; font-size:clamp(24px,2vw,29px); line-height:1.15; color:#41061C;">Planejamento individual</h3>
+        <p style="margin-top:12px; max-width:34ch; font-size:16px; line-height:1.65; color:#292526; text-wrap:pretty;">A partir da avaliação, definimos em conjunto as prioridades e um plano possível para a sua realidade.</p>
+      </li>
+      <li style="position:relative; border-top:1px solid #B9A398; padding:46px 32px 0 0;">
+        <span aria-hidden="true" style="position:absolute; top:-23px; left:0; width:46px; height:46px; border-radius:50%; border:1px solid #41061C; background:#E9DED6; display:grid; place-items:center; font-family:'Newsreader', Georgia, serif; font-size:19px; line-height:1; color:#41061C;">4</span>
+        <h3 style="font-family:'Newsreader', Georgia, serif; font-weight:400; font-size:clamp(24px,2vw,29px); line-height:1.15; color:#41061C;">Acompanhamento</h3>
+        <p style="margin-top:12px; max-width:34ch; font-size:16px; line-height:1.65; color:#292526; text-wrap:pretty;">Quando indicado, os retornos permitem ajustar o plano de acordo com a sua evolução e a sua rotina.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="movimento" tabindex="-1" aria-labelledby="movimento-titulo" data-screen-label="Vida em movimento" style="scroll-margin-top:72px; outline:none;">
+  <figure style="margin:0; position:relative; height:clamp(380px,54vw,820px); overflow:hidden; background:#D9D7D2;">
+    <img src="imagens/atividade-ar-livre.jpg" alt="Dra. Flávia Almeida corre sorrindo ao ar livre, em meio à vegetação, em um dia nublado." loading="lazy" decoding="async" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:62% 30%;">
+    <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><span style="position:absolute; top:16px; left:clamp(20px,5vw,64px); display:inline-flex; align-items:center; gap:7px; padding:5px 10px 5px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A;"></span>Autorização pendente · camiseta com marcas de terceiros</span></sc-if>
+  </figure>
+  <div style="max-width:1360px; margin:0 auto; padding:0 clamp(20px,5vw,64px) clamp(72px,9vw,130px);">
+    <div style="position:relative; z-index:1; margin-top:calc(-1 * clamp(48px,7vw,120px)); margin-left:calc(-1 * clamp(20px,5vw,64px)); max-width:calc(660px + clamp(20px,5vw,64px)); padding:clamp(28px,4vw,56px) clamp(20px,4vw,56px) 0 clamp(20px,5vw,64px); background:#F7F3EF; display:flex; flex-direction:column; gap:26px;">
+      <p style="display:flex; align-items:center; gap:10px; font-size:12px; line-height:1; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#41061C;"><span aria-hidden="true" style="width:8px; height:8px; border-radius:50%; border:1px solid currentColor; flex:none;"></span>Vida em movimento</p>
+      <h2 id="movimento-titulo" style="font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(38px,4.6vw,70px); line-height:1.03; letter-spacing:-0.022em; color:#41061C; text-wrap:balance;">Cuidar da saúde também é encontrar <em style="font-style:italic;">seu ritmo</em>.</h2>
+      <p style="max-width:56ch; font-size:clamp(17px,1.2vw,19px); line-height:1.7; color:#292526; text-wrap:pretty;">Correr ao ar livre é um dos jeitos que encontrei de cuidar de mim. O seu pode ser outro: uma caminhada no fim do dia, a dança, a musculação, a bicicleta, brincar com as crianças. Movimento conta em todas as formas — e a melhor escolha é aquela que cabe na sua vida e pode continuar.</p>
+    </div>
+  </div>
+</section>
+
+<section id="conteudos" tabindex="-1" aria-labelledby="conteudos-titulo" data-screen-label="Conteúdos" style="scroll-margin-top:72px; outline:none;">
+  <div style="max-width:1360px; margin:0 auto; padding:0 clamp(20px,5vw,64px) clamp(88px,11vw,160px);">
+    <div style="border-top:1px solid #DDD0C7; padding-top:clamp(64px,8vw,110px); display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:28px clamp(40px,6vw,96px);">
+      <div style="flex:1 1 440px; display:flex; flex-direction:column; gap:28px;">
+        <p style="display:flex; align-items:center; gap:10px; font-size:12px; line-height:1; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#41061C;"><span aria-hidden="true" style="width:8px; height:8px; border-radius:50%; border:1px solid currentColor; flex:none;"></span>Conteúdos</p>
+        <h2 id="conteudos-titulo" style="font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(38px,5vw,76px); line-height:1.03; letter-spacing:-0.022em; color:#41061C; text-wrap:balance;">Do consultório para o seu <em style="font-style:italic;">dia a dia</em>.</h2>
+      </div>
+      <p style="flex:1 1 320px; max-width:48ch; font-size:clamp(17px,1.2vw,19px); line-height:1.68; color:#292526; text-wrap:pretty;">Materiais educativos sobre alimentação, movimento e hábitos, para entender melhor a própria saúde e chegar à consulta com boas perguntas. Eles informam, mas não substituem uma avaliação individual.</p>
+    </div>
+    <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><p style="margin-top:24px;"><span style="display:inline-flex; align-items:center; gap:7px; padding:5px 10px 5px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A;"></span>Links provisórios para o perfil · trocar pelo link de cada publicação</span></p></sc-if>
+    <div style="margin-top:clamp(44px,5vw,72px); display:flex; flex-wrap:wrap; align-items:stretch; gap:clamp(16px,2vw,24px);">
+      <article style="flex:1.25 1 340px;">
+        <a href="https://www.instagram.com/dra.flaalmeida/" target="_blank" rel="noopener noreferrer" style="display:flex; flex-direction:column; gap:20px; height:100%; color:#292526; text-decoration:none;">
+          <div style="position:relative; aspect-ratio:1/1; overflow:hidden; border-radius:3px; background:#2E2A2C;">
+            <img src="imagens/post-intestino.jpg" width="1080" height="1080" alt="Dra. Flávia Almeida sorri, de blusa branca, em fundo escuro de estúdio." loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; transition:transform .9s cubic-bezier(.2,.7,.2,1);" style-hover="transform:scale(1.03);">
+          </div>
+          <div style="display:flex; flex-direction:column; gap:12px;">
+            <p style="font-size:12px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#5E5557;">Saúde intestinal · Publicação</p>
+            <h3 style="font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(28px,2.6vw,40px); line-height:1.1; letter-spacing:-0.015em; color:#41061C; text-wrap:balance;">O intestino faz muito mais do que digerir os alimentos</h3>
+            <span style="display:inline-flex; align-items:center; gap:8px; min-height:32px; font-size:15px; font-weight:600; color:#41061C; text-decoration:underline; text-underline-offset:5px;">Ver no Instagram <span aria-hidden="true">↗</span><span style="position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;">(abre em nova aba)</span></span>
+          </div>
+        </a>
+      </article>
+      <div style="flex:1 1 300px; display:flex; flex-direction:column; gap:clamp(16px,2vw,24px);">
+        <article style="flex:1 1 auto; display:flex;">
+          <a href="https://www.instagram.com/dra.flaalmeida/" target="_blank" rel="noopener noreferrer" style="flex:1; display:flex; flex-direction:column; justify-content:space-between; gap:40px; min-height:280px; padding:clamp(28px,3vw,44px); border-radius:3px; background:#41061C; color:#F7F3EF; text-decoration:none; transition:background-color .3s ease;" style-hover="background:#5A1230; color:#F7F3EF;">
+            <p style="font-size:12px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#B28E90;">Medicamentos · Publicação</p>
+            <div style="display:flex; flex-direction:column; gap:20px;">
+              <h3 style="font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(28px,2.6vw,40px); line-height:1.1; letter-spacing:-0.015em; color:#F7F3EF; text-wrap:balance;">“Se parar o remédio, volta tudo?” A resposta exige ciência, não achismo</h3>
+              <span style="display:inline-flex; align-items:center; gap:8px; font-size:15px; font-weight:600; color:#F7F3EF; text-decoration:underline; text-underline-offset:5px;">Ver no Instagram <span aria-hidden="true">↗</span><span style="position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;">(abre em nova aba)</span></span>
+            </div>
+          </a>
+        </article>
+        <article style="flex:1 1 auto; display:flex;">
+          <a href="https://www.instagram.com/dra.flaalmeida/" target="_blank" rel="noopener noreferrer" style="flex:1; display:flex; flex-direction:column; justify-content:space-between; gap:40px; min-height:280px; padding:clamp(28px,3vw,44px); border-radius:3px; background:#E9DED6; color:#41061C; text-decoration:none; transition:background-color .3s ease;" style-hover="background:#E2D3C9; color:#41061C;">
+            <div style="display:flex; flex-wrap:wrap; align-items:center; gap:10px;">
+              <p style="font-size:12px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#5E5557;">Hormônios e obesidade · Publicação</p>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:20px;">
+              <h3 style="font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(28px,2.6vw,40px); line-height:1.1; letter-spacing:-0.015em; color:#41061C; text-wrap:balance;">Antes de repor hormônio, é preciso tratar a obesidade</h3>
+              <span style="display:inline-flex; align-items:center; gap:8px; font-size:15px; font-weight:600; color:#41061C; text-decoration:underline; text-underline-offset:5px;">Ver no Instagram <span aria-hidden="true">↗</span><span style="position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;">(abre em nova aba)</span></span>
+            </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="duvidas" tabindex="-1" aria-labelledby="duvidas-titulo" data-screen-label="Dúvidas" style="scroll-margin-top:72px; outline:none; background:#E9DED6;">
+  <div style="max-width:1360px; margin:0 auto; padding:clamp(80px,10vw,150px) clamp(20px,5vw,64px); display:flex; flex-wrap:wrap; align-items:flex-start; gap:48px clamp(40px,7vw,120px);">
+    <div style="flex:1 1 300px; max-width:460px; display:flex; flex-direction:column; gap:28px;">
+      <p style="display:flex; align-items:center; gap:10px; font-size:12px; line-height:1; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#41061C;"><span aria-hidden="true" style="width:8px; height:8px; border-radius:50%; border:1px solid currentColor; flex:none;"></span>Dúvidas</p>
+      <h2 id="duvidas-titulo" style="font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(38px,5vw,76px); line-height:1.03; letter-spacing:-0.022em; color:#41061C; text-wrap:balance;">Perguntas <em style="font-style:italic;">frequentes</em></h2>
+      <p style="font-size:clamp(16px,1.1vw,18px); line-height:1.65; color:#292526; text-wrap:pretty;">Não encontrou o que procurava? Fale pelo <a href="{{ agendamento }}" target="_blank" rel="noopener noreferrer" style="color:#41061C; font-weight:600;">canal oficial de agendamento<span style="position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;">(abre em nova aba)</span></a>.</p>
+    </div>
+    <div style="flex:2 1 420px; border-top:1px solid #B9A398;">
+      <div style="border-bottom:1px solid #B9A398;">
+        <h3><button type="button" id="faq-1-btn" aria-expanded="{{ f1.open }}" aria-controls="faq-1" onClick="{{ f1.toggle }}" style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:24px; padding:26px 0; border:0; background:none; text-align:left; cursor:pointer; font-family:'Newsreader', Georgia, serif; font-size:clamp(21px,1.9vw,27px); font-weight:400; line-height:1.25; color:#41061C;"><span>Como faço para agendar uma consulta?</span><span aria-hidden="true" style="position:relative; flex:none; width:42px; height:42px; border-radius:50%; border:1px solid #41061C; transition:transform .35s ease; transform:rotate({{ f1.rot }});"><span style="position:absolute; left:50%; top:50%; width:14px; height:1.5px; margin:-0.75px 0 0 -7px; background:#41061C;"></span><span style="position:absolute; left:50%; top:50%; width:1.5px; height:14px; margin:-7px 0 0 -0.75px; background:#41061C;"></span></span></button></h3>
+        <div id="faq-1" role="region" aria-labelledby="faq-1-btn" style="display:grid; grid-template-rows:{{ f1.rows }}; visibility:{{ f1.vis }}; transition:grid-template-rows .4s cubic-bezier(.2,.7,.2,1), visibility .4s;">
+          <div style="overflow:hidden; min-height:0;">
+            <div style="padding:0 64px 28px 0; display:flex; flex-direction:column; align-items:flex-start; gap:12px;">
+              <p style="max-width:62ch; font-size:17px; line-height:1.68; color:#292526; text-wrap:pretty;">Pelo botão “Agendar consulta”, que leva ao canal oficial da Dra. Flávia Almeida. Lá estão reunidas as opções de contato atualizadas.</p>
+              <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex; align-items:center; gap:7px; padding:4px 10px 4px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A;"></span>Canal provisório (Linktree) · confirmar canal final</span></sc-if>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-bottom:1px solid #B9A398;">
+        <h3><button type="button" id="faq-2-btn" aria-expanded="{{ f2.open }}" aria-controls="faq-2" onClick="{{ f2.toggle }}" style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:24px; padding:26px 0; border:0; background:none; text-align:left; cursor:pointer; font-family:'Newsreader', Georgia, serif; font-size:clamp(21px,1.9vw,27px); font-weight:400; line-height:1.25; color:#41061C;"><span>Onde é o atendimento?</span><span aria-hidden="true" style="position:relative; flex:none; width:42px; height:42px; border-radius:50%; border:1px solid #41061C; transition:transform .35s ease; transform:rotate({{ f2.rot }});"><span style="position:absolute; left:50%; top:50%; width:14px; height:1.5px; margin:-0.75px 0 0 -7px; background:#41061C;"></span><span style="position:absolute; left:50%; top:50%; width:1.5px; height:14px; margin:-7px 0 0 -0.75px; background:#41061C;"></span></span></button></h3>
+        <div id="faq-2" role="region" aria-labelledby="faq-2-btn" style="display:grid; grid-template-rows:{{ f2.rows }}; visibility:{{ f2.vis }}; transition:grid-template-rows .4s cubic-bezier(.2,.7,.2,1), visibility .4s;">
+          <div style="overflow:hidden; min-height:0;">
+            <div style="padding:0 64px 28px 0; display:flex; flex-direction:column; align-items:flex-start; gap:12px;">
+              <p style="max-width:62ch; font-size:17px; line-height:1.68; color:#292526; text-wrap:pretty;">O endereço e as orientações de chegada são informados no momento do agendamento, pelo canal oficial.</p>
+              <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex; align-items:center; gap:7px; padding:4px 10px 4px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A;"></span>Resposta provisória · substituir pelo endereço confirmado</span></sc-if>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-bottom:1px solid #B9A398;">
+        <h3><button type="button" id="faq-3-btn" aria-expanded="{{ f3.open }}" aria-controls="faq-3" onClick="{{ f3.toggle }}" style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:24px; padding:26px 0; border:0; background:none; text-align:left; cursor:pointer; font-family:'Newsreader', Georgia, serif; font-size:clamp(21px,1.9vw,27px); font-weight:400; line-height:1.25; color:#41061C;"><span>Há atendimento online?</span><span aria-hidden="true" style="position:relative; flex:none; width:42px; height:42px; border-radius:50%; border:1px solid #41061C; transition:transform .35s ease; transform:rotate({{ f3.rot }});"><span style="position:absolute; left:50%; top:50%; width:14px; height:1.5px; margin:-0.75px 0 0 -7px; background:#41061C;"></span><span style="position:absolute; left:50%; top:50%; width:1.5px; height:14px; margin:-7px 0 0 -0.75px; background:#41061C;"></span></span></button></h3>
+        <div id="faq-3" role="region" aria-labelledby="faq-3-btn" style="display:grid; grid-template-rows:{{ f3.rows }}; visibility:{{ f3.vis }}; transition:grid-template-rows .4s cubic-bezier(.2,.7,.2,1), visibility .4s;">
+          <div style="overflow:hidden; min-height:0;">
+            <div style="padding:0 64px 28px 0; display:flex; flex-direction:column; align-items:flex-start; gap:12px;">
+              <p style="max-width:62ch; font-size:17px; line-height:1.68; color:#292526; text-wrap:pretty;">As modalidades disponíveis são informadas no momento do agendamento. Por lá, você confirma qual formato é possível para o seu caso.</p>
+              <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex; align-items:center; gap:7px; padding:4px 10px 4px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A;"></span>Resposta provisória · confirmar modalidades</span></sc-if>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-bottom:1px solid #B9A398;">
+        <h3><button type="button" id="faq-4-btn" aria-expanded="{{ f4.open }}" aria-controls="faq-4" onClick="{{ f4.toggle }}" style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:24px; padding:26px 0; border:0; background:none; text-align:left; cursor:pointer; font-family:'Newsreader', Georgia, serif; font-size:clamp(21px,1.9vw,27px); font-weight:400; line-height:1.25; color:#41061C;"><span>Como me preparar para a consulta?</span><span aria-hidden="true" style="position:relative; flex:none; width:42px; height:42px; border-radius:50%; border:1px solid #41061C; transition:transform .35s ease; transform:rotate({{ f4.rot }});"><span style="position:absolute; left:50%; top:50%; width:14px; height:1.5px; margin:-0.75px 0 0 -7px; background:#41061C;"></span><span style="position:absolute; left:50%; top:50%; width:1.5px; height:14px; margin:-7px 0 0 -0.75px; background:#41061C;"></span></span></button></h3>
+        <div id="faq-4" role="region" aria-labelledby="faq-4-btn" style="display:grid; grid-template-rows:{{ f4.rows }}; visibility:{{ f4.vis }}; transition:grid-template-rows .4s cubic-bezier(.2,.7,.2,1), visibility .4s;">
+          <div style="overflow:hidden; min-height:0;">
+            <div style="padding:0 64px 28px 0; display:flex; flex-direction:column; align-items:flex-start; gap:12px;">
+              <p style="max-width:62ch; font-size:17px; line-height:1.68; color:#292526; text-wrap:pretty;">Se tiver exames recentes ou a lista de medicamentos e suplementos que usa, vale levar: eles ajudam a contextualizar a sua história. Orientações específicas, quando necessárias, são passadas no agendamento.</p>
+              <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex; align-items:center; gap:7px; padding:4px 10px 4px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A;"></span>Orientação a validar com a médica</span></sc-if>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" ref="{{ contactRef }}" tabindex="-1" aria-labelledby="contato-titulo" data-screen-label="Contato" style="scroll-margin-top:72px; outline:none; position:relative; overflow:hidden; background:#41061C; color:#F7F3EF;">
+  <div aria-hidden="true" style="position:absolute; left:-34vw; bottom:-46vw; width:clamp(560px,78vw,1200px); aspect-ratio:1; border-radius:50%; border:1px solid #6B2A42; pointer-events:none;"></div>
+  <div style="position:relative; max-width:1360px; margin:0 auto; padding:clamp(88px,11vw,170px) clamp(20px,5vw,64px) clamp(64px,8vw,110px);">
+    <p style="display:flex; align-items:center; gap:10px; font-size:12px; line-height:1; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#B28E90;"><span aria-hidden="true" style="width:8px; height:8px; border-radius:50%; border:1px solid currentColor; flex:none;"></span>Contato</p>
+    <h2 id="contato-titulo" style="margin-top:clamp(24px,3vw,40px); max-width:14ch; font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(44px,7vw,112px); line-height:1; letter-spacing:-0.03em; color:#F7F3EF; text-wrap:balance;">O primeiro passo é uma <em style="font-style:italic; color:#B28E90;">conversa</em>.</h2>
+    <div style="margin-top:clamp(40px,5vw,72px); display:flex; flex-wrap:wrap; align-items:flex-start; gap:48px clamp(40px,7vw,120px);">
+      <div style="flex:1.3 1 340px; max-width:600px; display:flex; flex-direction:column; align-items:flex-start; gap:28px;">
+        <p style="font-size:clamp(17px,1.3vw,20px); line-height:1.65; color:#E9DED6; text-wrap:pretty;">Agende sua consulta pelo canal oficial. As opções de contato atualizadas estão reunidas em um só lugar.</p>
+        <a href="{{ agendamento }}" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; justify-content:center; gap:12px; min-height:60px; padding:0 34px; border-radius:999px; background:#F7F3EF; color:#41061C; text-decoration:none; font-size:17px; font-weight:600; transition:background-color .25s ease;" style-hover="background:#E9DED6; color:#41061C;">Agendar consulta <span aria-hidden="true">↗</span><span style="position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;">(abre em nova aba)</span></a>
+        <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex; align-items:center; gap:7px; padding:5px 10px 5px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A;"></span>Sem formulário até haver destino confirmado (e, se houver, sem dados de saúde)</span></sc-if>
+      </div>
+      <dl style="flex:1 1 300px; border-top:1px solid #6B2A42;">
+        <div style="display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:6px 24px; padding:18px 0; border-bottom:1px solid #6B2A42;">
+          <dt style="font-size:12px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#B28E90;">Agendamento</dt>
+          <dd><a href="{{ agendamento }}" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; min-height:32px; color:#F7F3EF; font-size:16px;" style-hover="color:#E9DED6;">{{ agendamentoLabel }}<span style="position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;">(abre em nova aba)</span></a></dd>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:6px 24px; padding:18px 0; border-bottom:1px solid #6B2A42;">
+          <dt style="font-size:12px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#B28E90;">Instagram</dt>
+          <dd><a href="https://www.instagram.com/dra.flaalmeida/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; min-height:32px; color:#F7F3EF; font-size:16px;" style-hover="color:#E9DED6;">@dra.flaalmeida<span style="position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;">(abre em nova aba)</span></a></dd>
+        </div>
+        <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:6px 24px; padding:16px 12px; margin-top:12px; border:1px dashed #9C7A1A; border-radius:8px; background:#F4E3B0; color:#4A3600;">
+            <dt style="font-size:12px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase;">Telefone / WhatsApp</dt>
+            <dd style="font-size:14px; font-weight:600;">A confirmar</dd>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:6px 24px; padding:16px 12px; margin-top:8px; border:1px dashed #9C7A1A; border-radius:8px; background:#F4E3B0; color:#4A3600;">
+            <dt style="font-size:12px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase;">Endereço</dt>
+            <dd style="font-size:14px; font-weight:600;">A confirmar</dd>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:6px 24px; padding:16px 12px; margin-top:8px; border:1px dashed #9C7A1A; border-radius:8px; background:#F4E3B0; color:#4A3600;">
+            <dt style="font-size:12px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase;">Horários</dt>
+            <dd style="font-size:14px; font-weight:600;">A confirmar</dd>
+          </div>
+        </sc-if>
+      </dl>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer id="rodape" ref="{{ footerRef }}" tabindex="-1" data-screen-label="Rodapé" style="outline:none; background:#41061C; color:#F7F3EF;">
+  <div style="max-width:1360px; margin:0 auto; padding:0 clamp(20px,5vw,64px) calc(36px + env(safe-area-inset-bottom, 0px));">
+    <p aria-hidden="true" style="font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(40px,10.2vw,150px); line-height:0.95; letter-spacing:-0.035em; color:#B28E90; white-space:nowrap; padding-bottom:clamp(20px,3vw,40px);"><span style="font-style:italic;">Dra.</span> Flávia Almeida</p>
+    <div style="border-top:1px solid #6B2A42; padding-top:28px; display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between; gap:28px 48px;">
+      <div style="display:flex; flex-direction:column; gap:8px;">
+        <p style="font-family:'Newsreader', Georgia, serif; font-size:22px; line-height:1.2; color:#F7F3EF;">Dra. Flávia Almeida</p>
+        <p style="font-size:14px; line-height:1.5; color:#E9DED6;">Clínica Médica e Nutrologia · CRM-MG 108002</p>
+        <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><p><span style="display:inline-flex; align-items:center; gap:7px; padding:4px 10px 4px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A;"></span>RQE e logo original pendentes</span></p></sc-if>
+      </div>
+      <nav aria-label="Rodapé">
+        <ul style="list-style:none; padding:0; display:flex; flex-wrap:wrap; align-items:center; gap:4px 28px; font-size:15px;">
+          <li><a href="https://www.instagram.com/dra.flaalmeida/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; min-height:44px; color:#F7F3EF;" style-hover="color:#E9DED6;">Instagram<span style="position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;">(abre em nova aba)</span></a></li>
+          <li><a href="{{ agendamento }}" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; min-height:44px; color:#F7F3EF;" style-hover="color:#E9DED6;">Agendamento<span style="position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;">(abre em nova aba)</span></a></li>
+          <li><button type="button" ref="{{ privacyBtnRef }}" onClick="{{ openPrivacy }}" aria-haspopup="dialog" style="display:inline-flex; align-items:center; min-height:44px; padding:0; border:0; background:none; color:#F7F3EF; font-size:15px; text-decoration:underline; text-underline-offset:0.22em; cursor:pointer;" style-hover="color:#E9DED6;">Política de privacidade</button></li>
+          <li><a href="#inicio" onClick="{{ navTo }}" style="display:inline-flex; align-items:center; gap:8px; min-height:44px; color:#F7F3EF;" style-hover="color:#E9DED6;">Voltar ao topo <span aria-hidden="true">↑</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div style="margin-top:28px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px 32px; font-size:13px; line-height:1.5; color:#B28E90;">
+      <p style="max-width:62ch;">As informações deste site têm caráter educativo e não substituem a consulta médica.</p>
+      <p>© 2026 Dra. Flávia Almeida</p>
+    </div>
+  </div>
+</footer>
+
+<sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
+  <div style="position:fixed; left:12px; right:12px; bottom:calc(12px + env(safe-area-inset-bottom, 0px)); z-index:30; transform:translateY({{ sticky.y }}); opacity:{{ sticky.op }}; visibility:{{ sticky.vis }}; transition:transform .4s cubic-bezier(.2,.7,.2,1), opacity .3s ease, visibility .4s;">
+    <a href="{{ agendamento }}" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px; border-radius:999px; background:#41061C; color:#F7F3EF; text-decoration:none; font-size:16px; font-weight:600; box-shadow:0 12px 32px rgba(65,6,28,0.28);" style-hover="background:#5A1230; color:#F7F3EF;">Agendar consulta <span aria-hidden="true">↗</span><span style="position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;">(abre em nova aba)</span></a>
+  </div>
+</sc-if>
+
+<sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}">
+  <aside aria-label="Pendências de revisão" style="position:fixed; right:16px; top:86px; z-index:35; width:min(360px, calc(100vw - 32px)); display:flex; flex-direction:column; align-items:flex-end; gap:10px;">
+    <button type="button" onClick="{{ togglePanel }}" aria-expanded="{{ panelOpen }}" aria-controls="painel-pendencias" style="display:inline-flex; align-items:center; gap:10px; min-height:44px; padding:0 8px 0 16px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:13px; font-weight:600; letter-spacing:0.04em; cursor:pointer; box-shadow:0 6px 20px rgba(41,37,38,0.14);">Pendências para publicar<span style="min-width:28px; height:28px; padding:0 6px; border-radius:999px; background:#4A3600; color:#F4E3B0; display:grid; place-items:center; font-size:12px;">{{ pendingCount }}</span></button>
+    <div id="painel-pendencias" hidden="{{ panelHidden }}" style="width:100%; max-height:min(68vh, 580px); overflow:auto; padding:18px 18px 8px; border:1px solid #D9C37A; border-radius:14px; background:#FFFBEF; box-shadow:0 18px 50px rgba(41,37,38,0.2);">
+      <p style="font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#4A3600;">Confirmar com a cliente</p>
+      <p style="margin-top:6px; font-size:13px; line-height:1.5; color:#5E5557;">Marcações visíveis apenas na revisão. Nenhum dado abaixo foi inventado no site.</p>
+      <ol style="list-style:none; padding:0; margin-top:12px;">
+        <sc-for list="{{ pendingItems }}" as="item" hint-placeholder-count="6">
+          <li style="border-top:1px solid #EFE3BD;">
+            <a href="{{ item.href }}" onClick="{{ navTo }}" style="display:block; padding:11px 0; color:#292526; text-decoration:none;" style-hover="color:#41061C;">
+              <span style="display:block; font-size:14px; font-weight:600; line-height:1.35;">{{ item.title }}</span>
+              <span style="display:block; margin-top:3px; font-size:12.5px; line-height:1.45; color:#5E5557;">{{ item.where }}</span>
+            </a>
+          </li>
+        </sc-for>
+      </ol>
+    </div>
+  </aside>
+</sc-if>
+
+<div onClick="{{ onBackdrop }}" style="position:fixed; inset:0; z-index:70; display:grid; place-items:center; padding:20px; background:rgba(41,37,38,0.6); visibility:{{ priv.vis }}; opacity:{{ priv.op }}; transition:opacity .3s ease, visibility .3s;">
+  <div ref="{{ privacyRef }}" role="dialog" aria-modal="true" aria-labelledby="privacidade-titulo" style="width:100%; max-width:580px; max-height:calc(100vh - 40px); overflow:auto; padding:clamp(26px,4vw,44px); border-radius:6px; background:#F7F3EF; color:#292526; display:flex; flex-direction:column; gap:18px;">
+    <h2 id="privacidade-titulo" style="font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(30px,3vw,40px); line-height:1.1; color:#41061C;">Política de privacidade</h2>
+    <p style="font-size:16px; line-height:1.65; text-wrap:pretty;">Este é um site institucional e informativo. Ele não possui formulários e não solicita dados pessoais ou de saúde.</p>
+    <p style="font-size:16px; line-height:1.65; text-wrap:pretty;">Os botões de agendamento e os links para o Instagram levam a serviços externos, que seguem as próprias políticas de privacidade.</p>
+    <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><p><span style="display:inline-flex; align-items:center; gap:7px; padding:4px 10px 4px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A;"></span>Texto provisório · validar versão final (LGPD), fontes e métricas</span></p></sc-if>
+    <button type="button" ref="{{ privacyCloseRef }}" onClick="{{ closePrivacy }}" style="align-self:flex-start; display:inline-flex; align-items:center; min-height:48px; padding:0 24px; border:1px solid #41061C; border-radius:999px; background:transparent; color:#41061C; font-size:15px; font-weight:600; cursor:pointer;" style-hover="background:#41061C; color:#F7F3EF;">Fechar</button>
+  </div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;mostrarPendencias&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Revisão&quot;},&quot;linkAgendamento&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://linktr.ee/flaviavalmeidaf&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Conversão&quot;},&quot;ctaFixoNoCelular&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Conversão&quot;}}">
+class Component extends DCLogic {
+  state = {
+    w: typeof window !== 'undefined' ? window.innerWidth : 1280,
+    menuOpen: false,
+    pastHero: false,
+    endVisible: false,
+    faq: [false, false, false, false],
+    privacyOpen: false,
+    panelOpen: true
+  };
+
+  menuBtnRef = React.createRef();
+  menuRef = React.createRef();
+  firstMenuLinkRef = React.createRef();
+  privacyRef = React.createRef();
+  privacyBtnRef = React.createRef();
+  privacyCloseRef = React.createRef();
+  contactRef = React.createRef();
+  footerRef = React.createRef();
+
+  pendingItems = [
+    { title: 'Logo original em arquivo vetorial', where: 'Cabeçalho e rodapé usam assinatura tipográfica provisória', href: '#inicio' },
+    { title: 'Número do RQE', where: 'Publicações mostram números diferentes · hero, Sobre e rodapé', href: '#sobre' },
+    { title: 'Formação e titulações (redação exata)', where: 'Nutrologia USP / HC Ribeirão Preto e graduação · Sobre', href: '#sobre' },
+    { title: 'Temas que são áreas de atendimento', where: 'Atendimento', href: '#atendimento' },
+    { title: 'Etapas do atendimento', where: 'Como funciona · sem duração, frequência, exames ou valores', href: '#como-funciona' },
+    { title: 'Canal final de agendamento', where: 'Todos os botões · provisório: Linktree', href: '#contato' },
+    { title: 'Telefone, endereço e horários', where: 'Contato e Dúvidas', href: '#contato' },
+    { title: 'Modalidades (presencial / online)', where: 'Dúvidas', href: '#duvidas' },
+    { title: 'Orientações de preparo para a consulta', where: 'Dúvidas', href: '#duvidas' },
+    { title: 'Três conteúdos aprovados e seus links', where: 'Conteúdos · hoje apontam para o perfil', href: '#conteudos' },
+    { title: 'Autorização de uso das fotos', where: 'Todas as imagens · e originais em alta resolução', href: '#movimento' },
+    { title: 'Política de privacidade final', where: 'Rodapé', href: '#rodape' },
+    { title: 'Revisão dos textos pela médica', where: 'Textos em primeira pessoa e normas de publicidade médica', href: '#sobre' }
+  ];
+
+  componentDidMount() {
+    document.documentElement.lang = 'pt-BR';
+    this.visible = new Set();
+    this.onResize = () => {
+      const w = window.innerWidth;
+      if (w !== this.state.w) this.setState({ w });
+      if (w >= 980 && this.state.menuOpen) this.closeMenu(false);
+    };
+    this.onScroll = () => {
+      const past = window.scrollY > window.innerHeight * 0.8;
+      if (past !== this.state.pastHero) this.setState({ pastHero: past });
+    };
+    this.onKey = (e) => {
+      if (e.key === 'Escape') {
+        if (this.state.menuOpen) this.closeMenu();
+        else if (this.state.privacyOpen) this.closePrivacy();
+      } else if (e.key === 'Tab') {
+        const root = this.state.menuOpen ? this.menuRef.current : this.state.privacyOpen ? this.privacyRef.current : null;
+        if (root) this.trapFocus(e, root);
+      }
+    };
+    window.addEventListener('resize', this.onResize);
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    document.addEventListener('keydown', this.onKey);
+    if ('IntersectionObserver' in window) {
+      this.io = new IntersectionObserver((entries) => {
+        entries.forEach((en) => { if (en.isIntersecting) this.visible.add(en.target); else this.visible.delete(en.target); });
+        const v = this.visible.size > 0;
+        if (v !== this.state.endVisible) this.setState({ endVisible: v });
+      });
+      [this.contactRef.current, this.footerRef.current].forEach((el) => el && this.io.observe(el));
+    }
+    this.onResize();
+    this.onScroll();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.onResize);
+    window.removeEventListener('scroll', this.onScroll);
+    document.removeEventListener('keydown', this.onKey);
+    if (this.io) this.io.disconnect();
+    document.body.style.overflow = '';
+  }
+
+  trapFocus(e, root) {
+    const items = Array.from(root.querySelectorAll('a[href], button:not([disabled])')).filter((el) => el.getClientRects().length > 0);
+    if (!items.length) return;
+    const first = items[0], last = items[items.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
+
+  openMenu = () => {
+    document.body.style.overflow = 'hidden';
+    this.setState({ menuOpen: true }, () => setTimeout(() => this.firstMenuLinkRef.current && this.firstMenuLinkRef.current.focus(), 80));
+  };
+
+  closeMenu = (restore) => {
+    document.body.style.overflow = '';
+    this.setState({ menuOpen: false }, () => {
+      if (restore !== false && this.menuBtnRef.current) this.menuBtnRef.current.focus();
+    });
+  };
+
+  openPrivacy = () => {
+    document.body.style.overflow = 'hidden';
+    this.setState({ privacyOpen: true }, () => setTimeout(() => this.privacyCloseRef.current && this.privacyCloseRef.current.focus(), 60));
+  };
+
+  closePrivacy = () => {
+    document.body.style.overflow = '';
+    this.setState({ privacyOpen: false }, () => this.privacyBtnRef.current && this.privacyBtnRef.current.focus());
+  };
+
+  onBackdrop = (e) => { if (e.target === e.currentTarget) this.closePrivacy(); };
+
+  navTo = (e) => {
+    const href = (e.currentTarget && e.currentTarget.getAttribute('href')) || '';
+    if (href.charAt(0) !== '#') return;
+    const el = document.getElementById(href.slice(1));
+    if (!el) return;
+    e.preventDefault();
+    const wasOpen = this.state.menuOpen;
+    if (wasOpen) this.closeMenu(false);
+    if (this.state.w < 720 && this.state.panelOpen) this.setState({ panelOpen: false });
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const go = () => {
+      const top = Math.max(0, el.getBoundingClientRect().top + window.scrollY - 72);
+      window.scrollTo({ top, behavior: reduce ? 'auto' : 'smooth' });
+      try { el.focus({ preventScroll: true }); } catch (err) {}
+    };
+    if (wasOpen) requestAnimationFrame(go); else go();
+  };
+
+  toggleFaq = (i) => () => this.setState((s) => { const faq = s.faq.slice(); faq[i] = !faq[i]; return { faq }; });
+
+  renderVals() {
+    const p = this.props || {};
+    const s = this.state;
+    const wide = s.w >= 980;
+    const pending = p.mostrarPendencias === true;
+    const agendamento = (typeof p.linkAgendamento === 'string' && p.linkAgendamento.trim()) || 'https://linktr.ee/flaviavalmeidaf';
+    const stickyOn = !wide && p.ctaFixoNoCelular !== false && s.pastHero && !s.endVisible && !s.menuOpen && !s.privacyOpen;
+    const faq = (i) => {
+      const open = !!s.faq[i];
+      return { open, rows: open ? '1fr' : '0fr', vis: open ? 'visible' : 'hidden', rot: open ? '45deg' : '0deg', toggle: this.toggleFaq(i) };
+    };
+    return {
+      wide, narrow: !wide, pending, agendamento,
+      agendamentoLabel: agendamento.replace(/^https?:\/\//, '').replace(/\/$/, ''),
+      menuOpen: s.menuOpen,
+      menu: { vis: s.menuOpen ? 'visible' : 'hidden', op: s.menuOpen ? 1 : 0 },
+      sticky: { vis: stickyOn ? 'visible' : 'hidden', op: stickyOn ? 1 : 0, y: stickyOn ? '0px' : '140%' },
+      priv: { vis: s.privacyOpen ? 'visible' : 'hidden', op: s.privacyOpen ? 1 : 0 },
+      f1: faq(0), f2: faq(1), f3: faq(2), f4: faq(3),
+      panelOpen: s.panelOpen, panelHidden: !s.panelOpen,
+      pendingItems: this.pendingItems, pendingCount: this.pendingItems.length,
+      togglePanel: () => this.setState((st) => ({ panelOpen: !st.panelOpen })),
+      openMenu: this.openMenu, closeMenu: this.closeMenu, navTo: this.navTo,
+      openPrivacy: this.openPrivacy, closePrivacy: this.closePrivacy, onBackdrop: this.onBackdrop,
+      menuBtnRef: this.menuBtnRef, menuRef: this.menuRef, firstMenuLinkRef: this.firstMenuLinkRef,
+      privacyRef: this.privacyRef, privacyBtnRef: this.privacyBtnRef, privacyCloseRef: this.privacyCloseRef,
+      contactRef: this.contactRef, footerRef: this.footerRef
+    };
+  }
+}
+</script>
+</body>
+</html>
