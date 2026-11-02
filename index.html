@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <script src="./support.js"></script>
 </head>
 <body>
@@ -34,6 +35,42 @@ button { font: inherit; }
 a, button { touch-action: manipulation; -webkit-tap-highlight-color: rgba(65,6,28,0.12); }
 :focus-visible { outline: 2px solid #B4456F; outline-offset: 3px; }
 ::selection { background: #41061C; color: #F7F3EF; }
+/* Hero no celular: foto de ponta a ponta, título por cima. O computador não muda. */
+@media (max-width: 899px) {
+  #inicio { background: #41061C; }
+  #inicio > div {
+    display: flex !important; flex-direction: column !important;
+    min-height: calc(100svh - 72px);
+    padding: 0 clamp(20px,5vw,64px) 48px !important;
+  }
+  #inicio > div > div:last-child { display: contents !important; }
+  #inicio figure {
+    order: -1; flex: 1 0 auto !important;
+    height: auto !important; min-height: 133vw;
+    margin: 0 calc(-1 * clamp(20px,5vw,64px)) !important;
+    border-radius: 0 !important; background: #2E2A2C !important;
+  }
+  #inicio figure img { object-position: 100% 20% !important; }
+  #inicio figure::after {
+    content: ""; position: absolute; inset: auto 0 0 0; height: 46%;
+    background: linear-gradient(to bottom, rgba(65,6,28,0) 0%, rgba(65,6,28,0.72) 45%, #41061C 100%);
+    pointer-events: none;
+  }
+  #inicio > div > div:first-child { position: relative; z-index: 1; margin-top: -132px; }
+  #inicio > div > div:last-child > div { flex: none !important; gap: 32px !important; margin-top: 28px; }
+  #inicio h1 { position: relative; z-index: 1; margin-top: 16px !important; font-size: clamp(2.3rem, 10.6vw, 3.2rem) !important; }
+  #inicio h1, #inicio p, #inicio a[href="#abordagem"] { color: #F7F3EF !important; }
+  #inicio a[target="_blank"] { background: #F7F3EF !important; color: #41061C !important; }
+  #inicio a[target="_blank"]:hover { background: #E9DED6 !important; }
+  #inicio a[href="#abordagem"] > span:first-child { border-color: #F7F3EF !important; }
+  #inicio :focus-visible { outline-color: #F7F3EF; }
+}
+@media (max-width: 899px) and (prefers-reduced-motion: no-preference) {
+  #inicio > div > div:first-child, #inicio h1, #inicio > div > div:last-child > div { animation: hero-sobe .9s cubic-bezier(.16,1,.3,1) both; }
+  #inicio h1 { animation-delay: .08s; }
+  #inicio > div > div:last-child > div { animation-delay: .16s; }
+}
+@keyframes hero-sobe { from { opacity: 0; transform: translateY(14px); } }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
