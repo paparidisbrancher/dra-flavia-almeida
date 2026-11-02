@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +7,7 @@
 <script src="./support.js"></script>
 </head>
 <body>
+<noscript><p style="padding:24px;font:18px/1.5 system-ui">Para falar sobre o atendimento: <a href="https://wa.me/5516997270148?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Fl%C3%A1via">Agendar consulta com a Dra. Flávia Almeida</a>.</p></noscript>
 <x-dc>
 <helmet>
 <title>Dra. Flávia Almeida — Clínica Médica e Nutrologia · CRM-MG 108002</title>
@@ -46,7 +47,7 @@ a, button { touch-action: manipulation; -webkit-tap-highlight-color: rgba(65,6,2
   #inicio > div > div:last-child { display: contents !important; }
   #inicio figure {
     order: -1; flex: 1 0 auto !important;
-    height: auto !important; min-height: 133vw;
+    height: auto !important; min-height: min(110vw, 440px);
     margin: 0 calc(-1 * clamp(20px,5vw,64px)) !important;
     border-radius: 0 !important; background: #2E2A2C !important;
   }
@@ -75,6 +76,8 @@ a, button { touch-action: manipulation; -webkit-tap-highlight-color: rgba(65,6,2
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
+@media (max-width:979px){body{padding-bottom:calc(88px + env(safe-area-inset-bottom))}html{scroll-padding-bottom:100px}a,button,summary{scroll-margin-bottom:100px}}
+h1,h2,h3{text-wrap:balance}
 </style>
 </helmet>
 <div style="background:#F7F3EF; color:#292526; font-family:'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif; overflow-x:clip;">
@@ -141,7 +144,7 @@ a, button { touch-action: manipulation; -webkit-tap-highlight-color: rgba(65,6,2
         <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex; align-items:center; gap:7px; padding:5px 10px 5px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em; text-transform:none;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A;"></span>RQE: aguardando confirmação</span></sc-if>
       </p>
     </div>
-    <h1 id="hero-titulo" style="margin-top:clamp(22px,3vw,40px); font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(42px,6.1vw,96px); line-height:1.02; letter-spacing:-0.025em; color:#41061C; text-wrap:balance;">Sua saúde merece uma <em style="font-style:italic;">estratégia</em> que faça sentido para você.</h1>
+    <h1 id="hero-titulo" style="margin-top:clamp(22px,3vw,40px); font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(42px,6.1vw,96px); line-height:1.02; letter-spacing:-0.025em; color:#41061C; text-wrap:balance;">Cuidado com sua saúde, no <em style="font-style:italic;">seu ritmo.</em></h1>
     <div style="display:flex; flex-wrap:wrap; align-items:stretch; gap:clamp(36px,5vw,80px); margin-top:clamp(32px,4.5vw,64px);">
       <div style="flex:1 1 360px; display:flex; flex-direction:column; justify-content:space-between; gap:40px;">
         <div style="display:flex; flex-direction:column; gap:32px;">
@@ -450,7 +453,7 @@ a, button { touch-action: manipulation; -webkit-tap-highlight-color: rgba(65,6,2
     <h2 id="contato-titulo" style="margin-top:clamp(24px,3vw,40px); max-width:14ch; font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(44px,7vw,112px); line-height:1; letter-spacing:-0.03em; color:#F7F3EF; text-wrap:balance;">O primeiro passo é uma <em style="font-style:italic; color:#B28E90;">conversa</em>.</h2>
     <div style="margin-top:clamp(40px,5vw,72px); display:flex; flex-wrap:wrap; align-items:flex-start; gap:48px clamp(40px,7vw,120px);">
       <div style="flex:1.3 1 340px; max-width:600px; display:flex; flex-direction:column; align-items:flex-start; gap:28px;">
-        <p style="font-size:clamp(17px,1.3vw,20px); line-height:1.65; color:#E9DED6; text-wrap:pretty;">Agende sua consulta pelo canal oficial. As opções de contato atualizadas estão reunidas em um só lugar.</p>
+        <p style="font-size:clamp(17px,1.3vw,20px); line-height:1.65; color:#E9DED6; text-wrap:pretty;">Converse pelo WhatsApp para consultar os horários e agendar sua consulta.</p>
         <a href="{{ agendamento }}" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; justify-content:center; gap:12px; min-height:60px; padding:0 34px; border-radius:999px; background:#F7F3EF; color:#41061C; text-decoration:none; font-size:17px; font-weight:600; transition:background-color .25s ease;" style-hover="background:#E9DED6; color:#41061C;">Agendar consulta <span aria-hidden="true">↗</span><span style="position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;">(abre em nova aba)</span></a>
         <sc-if value="{{ pending }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex; align-items:center; gap:7px; padding:5px 10px 5px 8px; border:1px dashed #9C7A1A; border-radius:999px; background:#F4E3B0; color:#4A3600; font-size:11.5px; line-height:1.25; font-weight:600; letter-spacing:0.02em;"><span aria-hidden="true" style="width:6px; height:6px; border-radius:50%; background:#9C7A1A;"></span>Sem formulário até haver destino confirmado (e, se houver, sem dados de saúde)</span></sc-if>
       </div>
@@ -511,7 +514,7 @@ a, button { touch-action: manipulation; -webkit-tap-highlight-color: rgba(65,6,2
 
 <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
   <div style="position:fixed; left:12px; right:12px; bottom:calc(12px + env(safe-area-inset-bottom, 0px)); z-index:30; transform:translateY({{ sticky.y }}); opacity:{{ sticky.op }}; visibility:{{ sticky.vis }}; transition:transform .4s cubic-bezier(.2,.7,.2,1), opacity .3s ease, visibility .4s;">
-    <a href="{{ agendamento }}" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px; border-radius:999px; background:#41061C; color:#F7F3EF; text-decoration:none; font-size:16px; font-weight:600; box-shadow:0 12px 32px rgba(65,6,28,0.28);" style-hover="background:#5A1230; color:#F7F3EF;">Agendar consulta <span aria-hidden="true">↗</span><span style="position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;">(abre em nova aba)</span></a>
+    <a href="{{ agendamento }}" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:56px; border-radius:999px; background:#41061C; color:#F7F3EF; text-decoration:none; font-size:16px; font-weight:600; border:1px solid rgba(247,243,239,0.4); box-shadow:0 12px 32px rgba(65,6,28,0.28);" style-hover="background:#5A1230; color:#F7F3EF;">Agendar consulta <span aria-hidden="true">↗</span><span style="position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;">(abre em nova aba)</span></a>
   </div>
 </sc-if>
 
@@ -547,13 +550,11 @@ a, button { touch-action: manipulation; -webkit-tap-highlight-color: rgba(65,6,2
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;mostrarPendencias&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Revisão&quot;},&quot;linkAgendamento&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://linktr.ee/flaviavalmeidaf&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Conversão&quot;},&quot;ctaFixoNoCelular&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Conversão&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;mostrarPendencias&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Revisão&quot;},&quot;linkAgendamento&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://wa.me/5516997270148?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Fl%C3%A1via&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Conversão&quot;},&quot;ctaFixoNoCelular&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Conversão&quot;}}">
 class Component extends DCLogic {
   state = {
     w: typeof window !== 'undefined' ? window.innerWidth : 1280,
     menuOpen: false,
-    pastHero: false,
-    endVisible: false,
     faq: [false, false, false, false],
     privacyOpen: false,
     panelOpen: true
@@ -574,7 +575,7 @@ class Component extends DCLogic {
     { title: 'Formação e titulações (redação exata)', where: 'Nutrologia USP / HC Ribeirão Preto e graduação · Sobre', href: '#sobre' },
     { title: 'Temas que são áreas de atendimento', where: 'Atendimento', href: '#atendimento' },
     { title: 'Etapas do atendimento', where: 'Como funciona · sem duração, frequência, exames ou valores', href: '#como-funciona' },
-    { title: 'Canal final de agendamento', where: 'Todos os botões · provisório: Linktree', href: '#contato' },
+    { title: 'Confirmar canal de agendamento', where: 'WhatsApp informado no Linktree oficial em 02/11/2026', href: '#contato' },
     { title: 'Telefone, endereço e horários', where: 'Contato e Dúvidas', href: '#contato' },
     { title: 'Modalidades (presencial / online)', where: 'Dúvidas', href: '#duvidas' },
     { title: 'Orientações de preparo para a consulta', where: 'Dúvidas', href: '#duvidas' },
@@ -586,15 +587,10 @@ class Component extends DCLogic {
 
   componentDidMount() {
     document.documentElement.lang = 'pt-BR';
-    this.visible = new Set();
     this.onResize = () => {
       const w = window.innerWidth;
       if (w !== this.state.w) this.setState({ w });
       if (w >= 980 && this.state.menuOpen) this.closeMenu(false);
-    };
-    this.onScroll = () => {
-      const past = window.scrollY > window.innerHeight * 0.8;
-      if (past !== this.state.pastHero) this.setState({ pastHero: past });
     };
     this.onKey = (e) => {
       if (e.key === 'Escape') {
@@ -606,25 +602,13 @@ class Component extends DCLogic {
       }
     };
     window.addEventListener('resize', this.onResize);
-    window.addEventListener('scroll', this.onScroll, { passive: true });
     document.addEventListener('keydown', this.onKey);
-    if ('IntersectionObserver' in window) {
-      this.io = new IntersectionObserver((entries) => {
-        entries.forEach((en) => { if (en.isIntersecting) this.visible.add(en.target); else this.visible.delete(en.target); });
-        const v = this.visible.size > 0;
-        if (v !== this.state.endVisible) this.setState({ endVisible: v });
-      });
-      [this.contactRef.current, this.footerRef.current].forEach((el) => el && this.io.observe(el));
-    }
     this.onResize();
-    this.onScroll();
   }
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.onResize);
-    window.removeEventListener('scroll', this.onScroll);
     document.removeEventListener('keydown', this.onKey);
-    if (this.io) this.io.disconnect();
     document.body.style.overflow = '';
   }
 
@@ -685,15 +669,15 @@ class Component extends DCLogic {
     const s = this.state;
     const wide = s.w >= 980;
     const pending = p.mostrarPendencias === true;
-    const agendamento = (typeof p.linkAgendamento === 'string' && p.linkAgendamento.trim()) || 'https://linktr.ee/flaviavalmeidaf';
-    const stickyOn = !wide && p.ctaFixoNoCelular !== false && s.pastHero && !s.endVisible && !s.menuOpen && !s.privacyOpen;
+    const agendamento = (typeof p.linkAgendamento === 'string' && p.linkAgendamento.trim()) || 'https://wa.me/5516997270148?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Fl%C3%A1via';
+    const stickyOn = !wide && p.ctaFixoNoCelular !== false && !s.menuOpen && !s.privacyOpen;
     const faq = (i) => {
       const open = !!s.faq[i];
       return { open, rows: open ? '1fr' : '0fr', vis: open ? 'visible' : 'hidden', rot: open ? '45deg' : '0deg', toggle: this.toggleFaq(i) };
     };
     return {
       wide, narrow: !wide, pending, agendamento,
-      agendamentoLabel: agendamento.replace(/^https?:\/\//, '').replace(/\/$/, ''),
+      agendamentoLabel: agendamento.includes('wa.me/5516997270148') ? 'WhatsApp (16) 99727-0148' : 'Canal de agendamento',
       menuOpen: s.menuOpen,
       menu: { vis: s.menuOpen ? 'visible' : 'hidden', op: s.menuOpen ? 1 : 0 },
       sticky: { vis: stickyOn ? 'visible' : 'hidden', op: stickyOn ? 1 : 0, y: stickyOn ? '0px' : '140%' },
